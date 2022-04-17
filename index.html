@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cronos Cash</title>
+    <link rel="stylesheet" href="App.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="js/index.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/lib/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<div class="app">
+
+    <div class="app__nav">
+        <img class="app__logo" src="media/Logo.png" alt="Cronos"/>
+    </div>
+
+    <div class="app__topinfobar">
+        <a class="app__whitepaper" href="" target="_blank" rel="noreferrer">Whitepaper</a>
+    </div>
+
+    <div class="app__main">
+        <button class="app__walletconnect" onclick="Connect()" id="connect-btn1">Connect</button>
+
+        <h2 style="color: white;">Cronos.cash <span id="countdown"></span></h2>
+        <br>
+        <br>
+
+        <h6 class="app__heading">Hire TimeKeepers. Earn <span>CRO</span>. Repeat</h6>
+
+        <div class="app__interact">
+            <div class="app__interactmargin">
+                <div class="app__interactstats">
+                    <div class="app__interactstatsdata">
+                        <p>Contract</p>
+                        <h5 id="contractBalance">0 CRO</h5>
+                    </div>
+
+                    <div class="app__interactstatsdata">
+                        <p>Wallet</p>
+                        <h5 id="walletBalance">0 CRO</h5>
+                    </div>
+
+                    <div class="app__interactstatsdata">
+                        <p>Workers:</p>
+                        <h5 id="yourFishermen">0 TIMEKEEPERS</h5>
+                    </div>
+                </div>
+
+                <div class="app__inputcontainer">
+                    <input class="app__inputbnb" type="number" id="app__inputbnb" />
+                    <div class="app__inputbnbsymbol"><p>CRO</p></div>
+                </div>
+
+                <button class="app__minebtn" onclick="stakeBNB()">Hire TimeKeepers</button>
+
+                <div class="app__divider"></div>
+
+                <div class="app__interactstatsreward">
+                    <p>Your Rewards</p>
+                    <h5 id="yourRewards">0 CRO</h5>
+                </div>
+
+                <div class="app__rewards">
+                    <button class="app__rewardsbtn" onclick="compound()">Re-Hire</button>
+                    <button class="app__rewardsbtn" onclick="sellFish()">Collect</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="app__statistics">
+            <div class="app__statisticsmargin">
+                <h5 class="app__statisticshead">Statistics</h5>
+
+                <div class="app__statisticsdivider"></div>
+
+                <div class="app__statisticsinfo">
+                    <p>Daily Return</p>
+                    <p>8%</p>
+                </div>
+
+                <div class="app__statisticsinfo">
+                    <p>APR</p>
+                    <p>2,920%</p>
+                </div>
+
+                <div class="app__statisticsinfo">
+                    <p>Deposit Fee</p>
+                    <p>8%</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="app__referral">
+            <h5>Referral Link</h5>
+
+            <input class="app__referralinput" id="refString" type="text" readOnly value="Connect wallet to see."/>
+
+            <p>Earn 12% of the CRO used to fish<br/> from anyone who uses your referral link</p>
+        </div>
+    </div>
+
+    <div class="app__socials">
+        <a href="https://bscscan.com/address/0x9801e942F8143887eaD706f9Ed3e0848501F8995#code" target="_blank" rel="noreferrer" class="app__socialslinks"><img src="media/bscscan.png" alt="BscScan Social" /></a>
+        <a href="https://t.me/Fishao" target="_blank" rel="noreferrer" class="app__socialslinks"><img src="media/telegram.png" alt="Telegram Social"/></a>
+    </div>
+</div>
+
+<script>
+    var countDownDate = new Date("Apr 25 2022 19:00:00 GMT+00:00").getTime();
+    var x = setInterval(function() {
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        document.getElementById("countdown").innerHTML = "opens in " + days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("countdown").innerHTML = "is live now";
+        }
+    }, 1000);
+</script>
+</body>
+</html>
