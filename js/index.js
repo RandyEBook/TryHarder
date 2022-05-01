@@ -1,7 +1,5 @@
 var CONTRACT_ADDRESS = '';
 
-var referrer = ''
-var upline = ''
 
 
 var getUrlParameter = function getUrlParameter(sParam) {
