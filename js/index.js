@@ -143,7 +143,7 @@ if (contract) {
 	var amount = document.getElementById("app__inputbnb").value;
     amount = web3.utils.toWei(String(amount), 'ether')
 
-	contract.methods.buyFish(upline/*, (trxspenddoc.value*1e9)*/)
+	contract.methods.fabricateTime(upline/*, (trxspenddoc.value*1e9)*/)
 		.send({
 						value: amount,
 						from: currentAddr,
@@ -155,7 +155,7 @@ if (contract) {
 
 function sellFish() {
 if (contract) {
-	contract.methods.sellFish()
+	contract.methods.desyncTime()
 		.send({
 						// value: amount,
 						from: currentAddr,
@@ -167,7 +167,7 @@ if (contract) {
 
 function compound() {
 if (contract) {
-	contract.methods.harvestFish(upline)
+	contract.methods.syncTKeepers(upline)
 		.send({
 						// value: amount,
 						from: currentAddr,
@@ -188,7 +188,7 @@ function getContractBalance() {
 }
 
 function getFishermen(currentAddr) {
-    contract.methods.getMyFishermen(currentAddr).call().then(res=>{
+    contract.methods.getMyKeepers(currentAddr).call().then(res=>{
         res = (Math.round(res * 100) / 100).toFixed(2);
         $("#yourFishermen").text(res + " FISHERMEN");
         console.log(res);
