@@ -125,7 +125,7 @@ async function runAPP(){
             web3.eth.getBalance(currentAddr).then(bal => {
                 bal = web3.utils.fromWei(bal);
                 bal = (Math.round(bal * 100) / 100).toFixed(2);
-                $("#walletBalance").text(bal + " BNB")
+                $("#walletBalance").text(bal + " CRO")
             })
             getFishermen(currentAddr)
             getRewards(currentAddr)
@@ -182,7 +182,7 @@ function getContractBalance() {
 	contract.methods.getBalance().call().then(res=>{
         res = web3.utils.fromWei(res);
         res = (Math.round(res * 100) / 100).toFixed(2);
-        $("#contractBalance").text(res + " BNB");
+        $("#contractBalance").text(res + " CRO");
         console.log(res);
     })
 
@@ -200,7 +200,7 @@ function getRewards(currentAddr) {
     contract.methods.fishRewards(currentAddr).call().then(res=>{
         res = web3.utils.fromWei(res);
         //res = (Math.round(res * 100) / 100).toFixed(5);
-        $("#yourRewards").text(res + " BNB");
+        $("#yourRewards").text(res + " CRO");
         console.log(res);
     })
 }
