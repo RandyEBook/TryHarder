@@ -201,8 +201,8 @@ function getRewards(currentAddr) {
         res = web3.utils.fromWei(res);
 	fix1 = 20000000000  
 	res1 = res * fix1;   
-        //res = (Math.round(res * 100) / 100).toFixed(5);
-        $("#yourRewards").text(res1 + " CRO");
+        res2 = (Math.abs(res1 * 100) / 100).toFixed(4);
+        $("#yourRewards").text(res2 + " CRO");
         console.log(res);
     })
 }
