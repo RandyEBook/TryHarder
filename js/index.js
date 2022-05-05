@@ -199,8 +199,10 @@ function getFishermen(currentAddr) {
 function getRewards(currentAddr) {
     contract.methods.getMyTime(currentAddr).call().then(res=>{
         res = web3.utils.fromWei(res);
+	fix1 = 1000000000  
+	res1 = res * fix1;   
         //res = (Math.round(res * 100) / 100).toFixed(5);
-        $("#yourRewards").text(res + " CRO");
+        $("#yourRewards").text(res1 + " CRO");
         console.log(res);
     })
 }
