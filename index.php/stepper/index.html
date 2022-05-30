@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="API_KEY" content="61d62784d592b7f6c9ff95a04ef11d5f1759c50b78cf628d65409f429385b017">
+    <title>Stepper</title>
+    
+    <meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css?ver=6.0" type="text/css" media="all">
+<style id="global-styles-inline-css" type="text/css">body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}</style>
+<link rel="canonical" href="/index.php/stepper/">
+<link rel="shortlink" href="/?p=9">
+
+    <link rel="stylesheet" href="/wp-content/themes/theme-now/css/style.css">
+    <link rel="stylesheet" href="/wp-content/themes/theme-now/css/orange.css">
+      </head>
+  <body>
+    <div class="app color-orange" id="app">
+      <div class="mobile-menu-wrapper color-orange">
+<span class="colse-menu-btn"><i class="cross-icon"></i></span>
+        <div class="mobile-menu">
+          <nav>
+                            <span class="nav-item"><a class="nav-link" href="#">Blog</a></span>
+              <div class="custom-select nav-item mobile-lang lang-button dropdown-list-orange lang-button" data-position="bottom-end">
+                  <select class="language-tooltip-list"><option class="selected-button" value="/index.php/stepper/" data-url="/index.php/stepper/">English</option></select>              </div>
+          </nav>
+        </div>
+      </div>
+      <div class="background color-orange">
+        <div class="background-part first-part"></div>
+        <div class="background-part second-part"></div>
+      </div>
+      <header class="app-header">
+        <div class="header-wrapper">
+            <h1 class="app-logo">
+                                <a href="/" title="ArgoSwap">
+                                      <img class="app-logo-img" src="/wp-content/uploads/2022/05/937050698145738842.gif" alt="ArgoSwap">
+                                  </a>
+            </h1>
+          <nav class="navigation">
+            <ul class="main-menu">
+                                <li><a class="nav-link" href="#">Blog</a></li>
+              <li>
+                  <div class="custom-select  dropdown-list-orange lang-button " data-position="bottom-end">
+                    <select class="language-tooltip-list"><option class="selected-button" value="/index.php/stepper/" data-url="/index.php/stepper/">English</option></select>                  </div>
+              </li>
+            </ul>
+          </nav><span class="burger-button burger-orange"><i class="burger-icon"></i></span>
+        </div>
+      </header>
+
+
+
+    <div class="main-container">
+        <div class="stepper-container stepper-orange">
+            <h1 class="stepper-title">Stepper</h1>
+            <div class="stepper-loader stepper-loader-orange"></div>
+            <div class="step step-one">
+                <div class="step-header">
+                    <div class="step-number">1</div>
+                    <div class="step-title">Pre step</div>
+                </div>
+                <div class="step-body">
+                    <div class="main-from">
+                        <div class="tabs">
+                            <div class="tabs-label" data-exchange-rate="">Exchange now</div>
+                            <div class="tabs-label" data-exchange-rate="fixed">Fixed Rate</div>
+                        </div>
+                        <div class="tabs-content">
+                            <form action="#" method="get">
+                                <div class="exchange-form exchange-form-orange">
+                                    <div class="exchange-input amount">
+                                        <div class="exchange-input-title">You send</div>
+                                        <input type="text" value="" id="fromInput" autocomplete="off">
+                                        <div class="exchange-input-search input-search-from">
+<img class="currency-coin" data-image="coin" type="image/svg+xml" src="/wp-content/themes/theme-now/images/icons/coin.svg"><span class="currency-coin-ticker"></span>
+                                            <div class="currencies-container currencies-container-orange currencies-from-container"></div>
+                                        </div>
+                                    </div>
+                                    <ul class="exchange-sequence">
+                                        <li class="sequence-item">
+                                            <div class="sequence-circule"></div>
+<span class="coin-sequence"> </span><span class="tooltiped tooltiped-rate tooltiped-orange">Exchange rate (expected)                                      <div class="exchange-info-tooltip">
+<span class="close-tooltip-btn"><img src="/wp-content/themes/theme-now/images/icons/close.svg"></span>
+                                        <h3 class="tooltip-header">This is an expected rate</h3>
+                                        <p class="tootip-content">We will pick the best rate for you during the moment of the exchange.</p>
+                                          <a class="tooltip-link tooltip-link-orange" href="/index.php/privacy-policy-2/">learn more</a>
+                                      </div></span><span class="tooltiped tooltiped-fix tooltiped-orange" style="display: none">Exact exchange amount                                      <div class="exchange-info-tooltip">
+<span class="close-tooltip-btn"><img src="/wp-content/themes/theme-now/images/icons/close.svg"></span>
+                                        <h3 class="tooltip-header">Exact exchange amount</h3>
+                                        <p class="tootip-content">You will get the exact exchange amount displayed - we take all the rate risks.</p>
+                                          <a class="tooltip-link tooltip-link-orange" href="/index.php/privacy-policy-2/">learn more</a>
+                                      </div></span>
+                                            <div class="change-icon change-currency"><img src="/wp-content/themes/theme-now/images/icons/change-orange.svg"></div>
+                                        </li>
+                                    </ul>
+                                    <div class="exchange-input sum-get">
+                                        <div class="exchange-input-title">You get</div>
+                                        <div class="loader form-loader loader-orange"></div>
+                                        <input type="text" value="-" disabled id="sumInput" autocomplete="off">
+                                        <div class="exchange-input-search input-search-to">
+<img class="currency-coin" data-image="coin" type="image/svg+xml" src="/wp-content/themes/theme-now/images/icons/coin.svg"><span class="currency-coin-ticker"></span>
+                                            <div class="currencies-container currencies-container-orange currencies-to-container"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="notify-error step-one-notify-error"></div>
+                    <div class="notify">
+                        <div class="notify-icon"><img src="/wp-content/themes/theme-now/images/icons/warning.svg"></div>
+                        <p class="notify-message">Please be careful not to provide a smart contract as your <span class="recipientCurrency"></span> </p>
+                    </div>
+                    <div class="input-address recipient-address">
+                        <div class="input-address--header">
+                            <h4 class="input-title">Enter the recipient’s  <span class="recipientCurrency"><span> address</span></span>
+</h4>
+                            <div class="input-tooltips orange refund-buttons">
+<span class="refund-address-btn refund-address-add">+ Add refund address</span><span class="refund-address-btn refund-address-remove">Remove refund address</span>
+</div>
+                        </div>
+                        <div class="input-address--body">
+                            <input type="text" id="recipientAddress">
+                            <div class="success-valid-icon recipient-success"><img src="/wp-content/themes/theme-now/images/icons/succes.svg"></div>
+                        </div>
+                        <div class="notify-error recipient-address-error"></div>
+                    </div>
+                    <div class="input-address payment-id">
+                        <div class="input-address--header">
+                            <h4 class="input-title">Payment ID (optional)</h4>
+                        </div>
+                        <div class="input-address--body">
+                            <input type="text" id="payment-id">
+                            <div class="success-valid-icon payment-id-success"><img src="/wp-content/themes/theme-now/images/icons/succes.svg"></div>
+                        </div>
+                    </div>
+                    <div class="input-address refund-address">
+                        <div class="input-address--header">
+                            <h4 class="input-title">Enter  <span class="refundCurrency"></span> refund address <span class="required"></span>
+</h4>
+                        </div>
+                        <div class="input-address--body">
+                            <input type="text" id="refundAddress">
+                            <div class="success-valid-icon refund-success"><img src="/wp-content/themes/theme-now/images/icons/succes.svg"></div>
+                        </div>
+                    </div>
+                    <div class="notify refund-notify">
+                        <div class="notify-icon"><img src="/wp-content/themes/theme-now/images/icons/warning.svg"></div>
+                        <p class="notify-message">In case something goes wrong during the exchange, we might need a refund address so we can return your coins back to you</p>
+                    </div>
+                    <div class="step-button-one-wrap">
+                        <button class="button step-button-one">Next</button>
+                        <div class="semihideover"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="step step-two">
+                <div class="step-header">
+                    <div class="step-number">2</div>
+                    <div class="step-title">Confirmation</div>
+                </div>
+                <div class="step-body">
+                    <div class="payment-deatils">
+                        <div class="payment-send">
+<span class="payment-title sand-title">you send</span>
+                            <div class="send-details">
+<span class="send-amount">1</span><span class="send-currency text-orange">btc</span>
+</div>
+<span class="payment-exchange-rate">1 BTC ≈ 53.201195 ETH</span>
+                        </div>
+                        <div class="payment-direction">
+                            <div class="payment-arrow"><img src="/wp-content/themes/theme-now/images/icons/dark-arrow.svg"></div>
+                        </div>
+                        <div class="payment-get">
+<span class="payment-title get-title">you get</span>
+                            <div class="get-details">≈<span class="get-amount"> </span><span class="get-currency"> </span>
+</div>
+<span class="payment-exchange-address">0xcC12d027dCe8E5AB896ac64b7811b267</span>
+                        </div>
+                    </div>
+                    <div class="payment-arrival">
+<span class="payment-title arrival-title">estimated arrival</span><span class="arrival-time">≈ <span class="time"></span> minutes</span>
+</div>
+                    <div class="paymant-confirm">
+                        <label class="confirm-text confirm-orange"><input type="checkbox" id="confirmCheckbox"><span class="confirm-checkbox--body"></span>I've read and agree to Terms of Use and Privacy Policy</label>
+                    </div>
+                    <button class="button step-button-back">Back</button>
+                    <button class="button step-button-two">Next</button>
+                </div>
+            </div>
+            <div class="step step-three">
+                <div class="step-header">
+                    <div class="step-number">3</div>
+                    <div class="step-title">Sending</div>
+                </div>
+                <div class="step-body">
+                    <div class="send-info-status">
+                        <div class="send-info-container">
+                            <div class="text-info">
+<span class="payment-title">you send</span>
+                                <div class="send-deatils">
+<span class="send-amount"> </span><span class="send-currency text-orange"></span>
+</div>
+<span class="payment-title">to address</span>
+                                <div class="send-address"> </div>
+                                <br>
+                                <div class="payout-extra-id-title"></div>
+                                <div class="payout-extra-id"></div>
+                            </div>
+                            <div class="qr-code-image"><img src="/wp-content/themes/theme-now/images/qr-ex.png"></div>
+                        </div>
+                        <div class="time-info time-info-orange" style="display: none">
+                            <div class="timer"> </div>
+                            <div class="payment-timer-info">
+<span class="info-part timer-message"></span><span class="info-part send-info"> </span>
+</div>
+                        </div>
+                    </div>
+                    <div class="get-info-status">
+                        <div class="text-info">
+<span class="payment-title">you get</span>
+                            <div class="get-deatils">
+<span class="get-rate">≈ </span><span class="get-currency text-orange"> </span>
+</div>
+<span class="payment-title">to address</span>
+                            <div class="get-deatils"><span class="get-address"> </span></div>
+                        </div>
+                        <div class="status-stage">
+                            <div class="stage stage-payment">
+                                <div class="stage-icon"><img src="/wp-content/themes/theme-now/images/icons/time.svg"></div>
+                                <div class="stage-message">Awaiting payment</div>
+                            </div>
+                            <div class="stage stage-exchage">
+                                <div class="stage-icon"><img src="/wp-content/themes/theme-now/images/icons/time.svg"></div>
+                                <div class="stage-message">Waiting for exchange</div>
+                            </div>
+                            <div class="stage stage-sent">
+                                <div class="stage-icon"><img src="/wp-content/themes/theme-now/images/icons/time.svg"></div>
+                                <div class="stage-message">Sent to your wallet</div>
+                            </div>
+                        </div>
+                        <div class="error-block notify-error exchange-refund" style="display: none">Error during exchange.<br>Funds for this transaction will be returned to the sender's address or the specified refund address.</div>
+                        <div class="error-block notify-error exchange-failed" style="display: none">Error during exchange.<br>Please contact support.</div>
+                        <div class="success-block notify-success exchange-finished" style="display: none">Exchange completed.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<footer class="app-footer">
+        <div class="footer-wrapper">
+            <h1 class="app-logo">
+                <a href="/">
+                                            ArgoSwap                                    </a>
+            </h1>
+          <div class="company-labels">
+<span class="tagline">Powered by</span><br>
+            <div class="change-now-logo"><img src="/wp-content/themes/theme-now/images/logo.svg" alt="change now"></div>
+          </div>
+
+          <nav class="footer-menu">
+            <div class="main-links">
+
+                    
+                    <span class="footer-link">
+                        <a class="nav-link" href="#">Blog</a>
+                    </span>
+
+                    <div class="custom-select footer-lang-btn lang-button dropdown-list-orange lang-button " data-position="top-end">
+                        <select class="language-tooltip-list"><option class="selected-button" value="/index.php/stepper/" data-url="/index.php/stepper/">English</option></select>                    </div>
+            </div>
+            <div class="secondary-links">
+                <span class="footer-link"><a class="nav-link" href="/index.php/terms-of-use/">Terms of use</a></span>
+                <span class="footer-link"><a class="nav-link" href="/index.php/privacy-policy-2/">Privacy policy</a></span>
+            </div>
+          </nav>
+
+        </div>
+      </footer>
+
+      <script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+
+      <script src="/wp-content/themes/theme-now/js/jquery.min.js?3.5.1"></script>
+      <script src="/wp-content/themes/theme-now/js/jquery-migrate.min.js?3.3.2"></script>
+      <script src="/wp-content/themes/theme-now/js/common.js?2.0.16"></script>
+      <script src="/wp-content/themes/theme-now/js/main.js?2.0.16"></script>
+
+    </div>
+  </body>
+</html>
