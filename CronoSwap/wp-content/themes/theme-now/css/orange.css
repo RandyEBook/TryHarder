@@ -75,18 +75,18 @@ html,body{
     background-color:#172A3F
 }
 .app.color-orange{
-    background:linear-gradient(155deg, rgba(255,145,72,0.4) 0%, transparent 40%),linear-gradient(335deg, rgba(255,145,72,0.4) 0%, transparent 40%);
-    background-color:#172A3F
+    background:linear-gradient(155deg, rgb(111 54 156 / 40%) 0%, transparent 40%),linear-gradient(335deg, rgb(74 38 93 / 40%) 0%, transparent 40%);
+    background-color:#061424
 }
 @media screen and (max-width: 768px){
     .app.color-orange{
-        background:linear-gradient(155deg, rgba(255,145,72,0.4) 0%, transparent 20%),linear-gradient(335deg, rgba(255,145,72,0.4) 0%, transparent 40%);
+        background:linear-gradient(155deg, rgb(46 8 56 / 40%) 0%, transparent 20%),linear-gradient(335deg, rgb(99 49 139 / 40%) 0%, transparent 40%);
         background-color:#172A3F
     }
 }
 @media screen and (max-width: 540px){
     .app.color-orange{
-        background:linear-gradient(154.44deg, rgba(255,145,72,0.4) 0%, rgba(255,145,72,0) 15%),linear-gradient(335deg, rgba(255,145,72,0.4) 0%, transparent 40%);
+        background:linear-gradient(154.44deg, rgb(129 59 219 / 40%) 0%, rgba(255,145,72,0) 15%),linear-gradient(335deg, rgb(158 96 54 / 40%) 0%, transparent 40%);
         background-color:#172A3F
     }
 }
@@ -551,7 +551,7 @@ svg path{
     color:#36a8ff
 }
 .main-form-block.color-orange .application-tagline>p{
-    color:#ff9148
+    color: #d7d24e;
 }
 .form-block-container{
     margin:0 auto;
@@ -840,7 +840,7 @@ svg path{
     background-color:#36a8ff
 }
 .main-from .tabs-content .exchange-form-btn.button-orange{
-    background-color:#ff9148
+    background-color: #6048ff;
 }
 .main-from .tabs-content .exchange-form-btn .btn-arrow-icon{
     position:absolute;
