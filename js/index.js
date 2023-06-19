@@ -210,8 +210,8 @@ function getRewards(currentAddr) {
         proper = res * res9
       
         proper1 = proper
-        proper2 = proper1 * (10 ** -16)
-        $("#yourRewards").text(proper2 + " CRO");
+        proper2 = proper1 * (10 ** -2)
+        $("#Rewards").text(proper2);
         console.log(proper2);
         })
     })
