@@ -198,24 +198,24 @@ function getFishermen(currentAddr) {
 }
 
 function getRewards(currentAddr) {
-    contract.methods.getMyTime(currentAddr).call().then(res=>{
+    PSN = 10000;
+    PSNH = 5000;
+    rt = 1
     
-    })
-
-    contract.methods.calculateTimeSell(1).call().then(res9=>{
+     contract.methods.getBalance().call().then(bs => {
+      contract.methods.marketTime.call().call().then(rs => {
+        res9 = (PSN * bs) / (PSNH + ( (PSN * rs + PSNH * rt) / rt) )
         contract.methods.getMyTime(currentAddr).call().then(res=>{
-        res = res * (10 ** -4)
-        res9 = res9 * (10 ** -12)
-
-        proper = res * res9
-      
-        proper1 = proper
-        proper2 = proper1 * (10 ** -2)
-        $("#YourRewards").text(proper2 + " CRO");
-        console.log(proper2);
+              res = res * (10 ** -4)
+              res9 = res9 * (10 ** -12)
+              proper = res * res9
+              proper1 = proper
+              proper2 = proper1 * (10 ** -2)
+              $("#yourRewards").text(proper2 + " CRO");
+              console.log(proper2);
+            })
+          })
         })
-    })
-	
 }
 
 function calcuate(number)
